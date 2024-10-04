@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-block {
+    background: #ffffff;
+    padding: 50px;
+    margin-top: 0;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-block h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-label label {
+    font-size: 16px;
+    color: #555;
+}
+
+.input-label input {
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-label input:focus {
+    border-color: #00ff6a;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(74, 144, 226, 0.2);
+}
+
+.input-btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #4ae28e;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.input-btn:hover {
+    background-color: #00ff6a;
+    transform: translateY(-2px);
+}
+
+.input-btn:active {
+    transform: translateY(0);
+    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.errors {
+    color: #d9534f;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.no-error {
+    color: #5cb85c;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
